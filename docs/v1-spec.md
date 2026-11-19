@@ -11,6 +11,7 @@ In a shop, a **Damaged Barcode** won't scan at checkout. The user points the pho
 - **EAN-13** only (Italian grocery goods; UPC-A is EAN-13 with a leading 0). EAN-8, Code 128, QR and others are out: they end in **No Guess**.
 - iPhone first (iOS 17+, portrait only). Android follows with the same shared code.
 - On-device only. English-only UI, with strings in resource files so Italian can be added later.
+- App name "Barcode Helper"; bundle ID and Android package `it.manumax78.barcodehelper`.
 
 ## Out of scope
 
@@ -67,6 +68,5 @@ platform (small interface: frame in -> decoded bars + text candidates out)
 
 ## Open items
 
-- **Bundle ID / package:** the owner wrote `it.manumax78.bardcodehelper` ("bard" rather than "bar"). Confirm whether that spelling is intended before the first install; it is painful to change later.
 - **Team ID:** supplied by the owner at build-order step 4.
 - **Android phone:** assumed none for now, so Android is verified only on the emulator with photo fixtures.
