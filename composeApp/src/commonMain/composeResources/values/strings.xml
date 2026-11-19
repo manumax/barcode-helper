@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Barcode Helper</string>
+    <string name="placeholder_title">Barcode Helper</string>
+    <string name="placeholder_body">Scanning is coming soon.</string>
+</resources>
