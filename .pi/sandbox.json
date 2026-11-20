@@ -1,0 +1,8 @@
+{
+  "filesystem": {
+    "allowWrite": [
+      "/Users/manuele.mion/Library/Logs/CoreSimulator",
+      "/private/var/folders/sf/59tj1h9s70x6h7xhl3_bp8vr0000gn/T"
+    ]
+  }
+}
