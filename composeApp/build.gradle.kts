@@ -10,6 +10,7 @@ kotlin {
         namespace = "it.manumax78.barcodehelper.shared"
         compileSdk = libs.versions.compileSdk.get().toInt()
         minSdk = libs.versions.minSdk.get().toInt()
+        androidResources { enable = true }
         withHostTestBuilder {}
     }
 
