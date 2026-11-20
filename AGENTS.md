@@ -15,3 +15,7 @@ Default five-role vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `
 ### Domain docs
 
 Single-context: root `GLOSSARY.md` plus `docs/adr/`. See `docs/agents/domain.md`.
+
+## Verification
+
+Before calling work done, run the app on both the Android emulator and the iOS simulator and exercise the changed behavior by hand (e.g. via the mobile-mcp tools). Unit tests and compiling are not enough.
