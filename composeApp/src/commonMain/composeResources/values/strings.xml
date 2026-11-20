@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Barcode Helper</string>
     <string name="scanning">Scanning…</string>
+    <string name="no_guess">Can't guess this barcode</string>
 </resources>
