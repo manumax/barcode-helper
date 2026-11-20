@@ -22,9 +22,13 @@ fun App() {
         val guess = scan.guess
         if (guess != null) {
             ResultScreen(guess, onDismiss = scan::dismiss)
+        } else if (scan.noGuess) {
+            NoGuessScreen(onDismiss = scan::dismiss)
         } else {
-            // Restarting the stub on each new Scan (guess back to null).
-            LaunchedEffect(Unit) { ReadingStub.emit(onReading = scan::onReading) }
+            // Restarting the Scan (stub + timeout) each time we return here after a dismiss.
+            LaunchedEffect(Unit) {
+                scan.run { onReading -> ReadingStub.emit(ReadingStub.neverAgreeing, onReading = onReading) }
+            }
             Column(
                 modifier = Modifier.fillMaxSize().safeContentPadding(),
                 verticalArrangement = Arrangement.Center,
